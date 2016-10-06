@@ -4,25 +4,18 @@
 	<script type="text/javascript">	
 		function getName(){
 		var fullName;
-		fullName = document.getElementById("first").value;
+		fullName = document.getElementById("first").value + document.getElementById("last").value ;
 		document.getElementById("message").innerHTML = fullName;
 	}
 	</script>
 </head>
-
-
 <body>
 	<form>
 	<input type="text" id ="first">
-
 	<input type="text" id ="last">
-
 	<input type="button" id="doneButton" onclick ="getName()" value="Done">
 	</form>
 	<p id ="message">
-
 	</p>
-
 </body>
-
 </html>
